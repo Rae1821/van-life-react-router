@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +9,155 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', sans-serif;
+  background-color: #FFF7ED;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFF7ED;
+  padding: 2em;
+}
+
+.logo {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.6rem;
+  color: black;
+}
+
+header a {
+  color: #4D4D4D;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding-right: .5em;
+}
+
+header a:hover {
+  color: #161616;
+  text-decoration: underline;;
+}
+
+.link-btn {
+  display: inline-block;
+  text-align: center;
+  border: none;
+  padding: .75em 1.375em;
+  color: initial;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform .1s ease-in-out;
+}
+
+.link-btn:hover {
+  transform: translate(1px,1px);
+}
+
+.main-content {
+  background-image: url('images/image-53.png');
+  background-size: cover;
+  background-position: center;
+  padding: 2em;
+}
+
+.main-content > h1 {
+  color: white;
+  font-size: 2.25rem;
+  margin: 0;
+}
+
+.main-content  p {
+  color: white;
+  font-size: 1em;
+  line-height: 1.3;
+  margin-top: 1em;
+}
+
+.link-btn {
+  background-color: #FF8C38;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 1em;
+  margin: 3em 0 1em;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #252525;
+}
+
+footer > p {
+  color: #AAAAAA;
+  font-size: 0.875rem;
+  text-align: center;
+  padding: 2em 3em;
+}
+
+/***** About Page *********/
+
+.about-hero-img {
+  max-width: 100%;
+}
+
+.about-page-content {
+  
+  padding-inline: 26px;
+  color: #161616;
+  margin: 0 auto 2em;
+  max-width: 90%;
+}
+
+.about-page-content h1 {
+  line-height: 38px;
+  font-size: 1.75rem;
+  padding-top: 2em;
+}
+
+.about-page-content > p {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 1em 0;
+}
+
+.about-page-cta {
+  background-color: #FFCC8D;
+  color: #161616;
+  padding-left: 2em;
+  padding-bottom: 1em;
+  border-radius: 5px;
+  margin-top: 2em;
+}
+
+.about-page-cta h2 {
+  margin: 0;
+  padding-block: 37px;
+}
+
+.about-page-cta .link-btn {
+  background-color: #161616;
+  color: white;
+  border-radius: 10px;
+  margin-top: 0;
+  text-decoration: none;
+  width: 50%;
 }
